@@ -1,4 +1,4 @@
-# analise_comportamento
+# Analise engajamento de usuarios
 
 import pandas as pd
 
@@ -56,6 +56,8 @@ sns.barplot(
 	data=analise_plano,
 	x='plano',
 	y='curtidas_por_minuto',
+	hue='plano',
+	legend=False,
 	palette=['#3498db', '#2ecc71']
 )
 
